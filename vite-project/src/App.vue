@@ -21,7 +21,10 @@
 
   <h3 v-if="correcto">Iteration 3 completed!</h3>
 
-
+<!-- teration 4 | Display a list of elements that are stored inside a component
+ 2. Make the posts "show up" on your template using the v-for directive.-->
+ 
+<Users />
 
 <Footer />
 
@@ -29,9 +32,14 @@
 
 <!-- SCRIPT COMPOSITION API (JavaScript)-->
 <script setup>
+
+//Iteration 1 | Create a basic template structure inside a new project
+
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
+import Users from './components/Users.vue'
 
+// Iteration 2 | Display the result of a Javascript operation in a component's HTML
 import { ref } from 'vue'
 const num1 = ref(Number)
 const num2 = ref(Number)
@@ -43,6 +51,8 @@ const name = ref(String)
 const printString = (name) => {
   return name
 }
+
+// Iteration 3 | Show an element only if a particular property is set to true
 const correcto = ref(true)
 
 
